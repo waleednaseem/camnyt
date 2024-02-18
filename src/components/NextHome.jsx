@@ -1,7 +1,7 @@
 import React from "react";
-import arrowRight from "@/images/arrowRight.png"
+// import arrowRight from "@/images/arrowRight.png"
 import Image from 'next/image'
-import VectorArrow from "@/images/VectorArrow.png"
+// import VectorArrow from "@/images/VectorArrow.png"
 
 const guidelinesData = [
     {
@@ -82,7 +82,7 @@ const NextHome = () => {
                 {guidelinesData.map((guideline, index) => (
                     <div key={index} className="w-full max-w-[600px] rounded-lg lg:h-[280px] border p-2 border-x-[#FF5887] border-y-[#1CA5FC]">
                         <div className="flex items-center  justify-start w-full px-2 gap-2">
-                            <Image src={arrowRight} />
+                            <Image src={'/images/arrowRight.png'} />
                             <p className="font-bold text-xl">{guideline.title}</p>
                         </div>
                         <ul className="list-disc px-8 py-3 pl-12 text-base text-[#4F4F4F]">
@@ -92,7 +92,7 @@ const NextHome = () => {
                         </ul>
 
                         <div className="w-full flex justify-end pr-10">
-                            <Image src={VectorArrow} />
+                            <Image src={'/images/VectorArrow.png'} />
                         </div>
                     </div>
                 ))}
